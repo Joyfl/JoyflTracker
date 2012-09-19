@@ -1,5 +1,5 @@
 //
-//  NearbyViewList.h
+//  WorkoutViewReady.h
 //  Joyfl Tracker
 //
 //  Created by 설 진석 on 12. 9. 20..
@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NearbyViewFeed.h"
 
-@interface NearbyViewList : UIScrollView
-{
-    
-}
+@interface WorkoutViewReady : UIView
 
 @end

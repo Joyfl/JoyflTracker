@@ -20,6 +20,14 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        // Custom initialization
+        
+        // Set TabBarItem
+        [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"History" image:[UIImage imageNamed:@"history.png"] tag:2]];
+        [[self tabBarItem] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
+        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"history_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"history.png"]];
+        
+        // Set first view as HistoryViewList
         historyViewList = [[HistoryViewList alloc] init];
         [self setView:historyViewList];
     }

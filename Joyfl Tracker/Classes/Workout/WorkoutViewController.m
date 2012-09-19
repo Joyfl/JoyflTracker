@@ -1,20 +1,21 @@
 //
-//  NearbyViewController.m
+//  WorkoutViewController.m
 //  Joyfl Tracker
 //
-//  Created by 설 진석 on 12. 9. 20..
+//  Created by 설 진석 on 12. 9. 13..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
-#import "NearbyViewController.h"
+#import "WorkoutViewController.h"
 
-@interface NearbyViewController ()
+@interface WorkoutViewController ()
 
 @end
 
-@implementation NearbyViewController
+@implementation WorkoutViewController
 
-@synthesize nearbyViewList;
+@synthesize workoutViewReady;
+@synthesize workoutViewTracking;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,12 +24,13 @@
         // Custom initialization
         
         // Set TabBarItem
-        [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Nearby" image:[UIImage imageNamed:@"nearby.png"] tag:3]];
-        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"nearby_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"nearby.png"]];
+        [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Workout" image:[UIImage imageNamed:@"run.png"] tag:1]];
+        [[self tabBarItem] setBadgeValue:@"3"];
+        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"workout_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"workout.png"]];
         
-        // Set first view as NearbyViewList
-        nearbyViewList = [[NearbyViewList alloc] init];
-        [self setView:nearbyViewList];
+        // Set first view as WorkoutViewReady
+        workoutViewReady = [[WorkoutViewReady alloc] init];
+        [self setView:workoutViewReady];
     }
     return self;
 }
