@@ -1,26 +1,27 @@
 //
-//  WorkoutViewController.m
+//  HistoryViewController.m
 //  Joyfl Tracker
 //
 //  Created by 설 진석 on 12. 9. 13..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
-#import "WorkoutViewController.h"
+#import "HistoryViewController.h"
 
-@interface WorkoutViewController ()
+@interface HistoryViewController ()
 
 @end
 
-@implementation WorkoutViewController
+@implementation HistoryViewController
+
+@synthesize historyViewList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-        WorkoutView *workoutView = [[WorkoutView alloc] init];
-        [self setView:workoutView];
+        historyViewList = [[HistoryViewList alloc] init];
+        [self setView:historyViewList];
     }
     return self;
 }

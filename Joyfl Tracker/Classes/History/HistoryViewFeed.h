@@ -1,13 +1,13 @@
 //
-//  RoutesView.h
+//  HistoryViewFeed.h
 //  Joyfl Tracker
 //
-//  Created by 설 진석 on 12. 9. 13..
+//  Created by 설 진석 on 12. 9. 20..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface RoutesView : UIView
+@interface HistoryViewFeed : UIView
 
 @end

@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HistoryView.h"
+#import "HistoryViewList.h"
 
 @interface HistoryViewController : UIViewController
+{
+    HistoryViewList *historyViewList;
+}
+
+@property (nonatomic, retain) HistoryViewList *historyViewList;
 
 @end

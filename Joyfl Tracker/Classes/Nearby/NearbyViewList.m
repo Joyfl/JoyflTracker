@@ -1,24 +1,20 @@
 //
-//  WorkoutView.m
+//  NearbyViewList.m
 //  Joyfl Tracker
 //
-//  Created by 설 진석 on 12. 9. 13..
+//  Created by 설 진석 on 12. 9. 20..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
-#import "WorkoutView.h"
+#import "NearbyViewList.h"
 
-@implementation WorkoutView
+@implementation NearbyViewList
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        CGRect labelFrame = CGRectMake(50, 50, 200, 30);
-        UILabel *hello = [[UILabel alloc] initWithFrame: labelFrame];
-        hello.text = [[NSString alloc] initWithString:@"workout"];
-        [self addSubview:hello];
     }
     return self;
 }

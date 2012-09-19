@@ -1,25 +1,28 @@
 //
-//  HistoryViewController.m
+//  NearbyViewController.m
 //  Joyfl Tracker
 //
-//  Created by 설 진석 on 12. 9. 13..
+//  Created by 설 진석 on 12. 9. 20..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
-#import "HistoryViewController.h"
+#import "NearbyViewController.h"
 
-@interface HistoryViewController ()
+@interface NearbyViewController ()
 
 @end
 
-@implementation HistoryViewController
+@implementation NearbyViewController
+
+@synthesize nearbyViewList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        HistoryView *historyView = [[HistoryView alloc] init];
-        [self setView:historyView];
+        // Custom initialization
+        nearbyViewList = [[NearbyViewList alloc] init];
+        [self setView:nearbyViewList];
     }
     return self;
 }
