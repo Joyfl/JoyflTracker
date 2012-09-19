@@ -14,15 +14,21 @@
 		B1143363160133FD006B7239 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1143362160133FD006B7239 /* main.m */; };
 		B1143367160133FD006B7239 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1143366160133FD006B7239 /* AppDelegate.m */; };
 		B11433A816014925006B7239 /* run.png in Resources */ = {isa = PBXBuildFile; fileRef = B11433A716014925006B7239 /* run.png */; };
-		B182DAC81601C09E0017BB8B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DAC71601C09E0017BB8B /* TabBarController.m */; };
-		B182DACE1601C0AA0017BB8B /* WorkoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DACB1601C0AA0017BB8B /* WorkoutView.m */; };
-		B182DACF1601C0AA0017BB8B /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DACD1601C0AA0017BB8B /* WorkoutViewController.m */; };
-		B182DAD41601C0C40017BB8B /* HistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DAD11601C0C40017BB8B /* HistoryView.m */; };
-		B182DAD51601C0C40017BB8B /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DAD31601C0C40017BB8B /* HistoryViewController.m */; };
-		B182DADA1601C0FE0017BB8B /* ProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DAD71601C0FE0017BB8B /* ProfileView.m */; };
-		B182DADB1601C0FE0017BB8B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DAD91601C0FE0017BB8B /* ProfileViewController.m */; };
-		B182DAE21601C1450017BB8B /* RoutesView.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DADF1601C1450017BB8B /* RoutesView.m */; };
-		B182DAE31601C1450017BB8B /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B182DAE11601C1450017BB8B /* RoutesViewController.m */; };
+		B146E2AB160A6096009357C3 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2AA160A6096009357C3 /* TabBarController.m */; };
+		B146E2B2160A60B7009357C3 /* WorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2AD160A60B7009357C3 /* WorkoutViewController.m */; };
+		B146E2B3160A60B7009357C3 /* WorkoutViewReady.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2AF160A60B7009357C3 /* WorkoutViewReady.m */; };
+		B146E2B4160A60B7009357C3 /* WorkoutViewTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2B1160A60B7009357C3 /* WorkoutViewTracking.m */; };
+		B146E2BB160A60BF009357C3 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2B6160A60BF009357C3 /* HistoryViewController.m */; };
+		B146E2BC160A60BF009357C3 /* HistoryViewDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2B8160A60BF009357C3 /* HistoryViewDetail.m */; };
+		B146E2BD160A60BF009357C3 /* HistoryViewList.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2BA160A60BF009357C3 /* HistoryViewList.m */; };
+		B146E2C0160A60C8009357C3 /* NearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2BF160A60C8009357C3 /* NearbyViewController.m */; };
+		B146E2C6160A6192009357C3 /* NearbyViewList.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2C5160A6192009357C3 /* NearbyViewList.m */; };
+		B146E2C9160A61CD009357C3 /* NearbyViewFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2C8160A61CD009357C3 /* NearbyViewFeed.m */; };
+		B146E2CC160A6296009357C3 /* HistoryViewFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2CB160A6296009357C3 /* HistoryViewFeed.m */; };
+		B146E2CF160A632E009357C3 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2CE160A632E009357C3 /* ProfileViewController.m */; };
+		B146E2D2160A6368009357C3 /* ProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = B146E2D1160A6368009357C3 /* ProfileView.m */; };
+		B146E2D5160A6D6D009357C3 /* tabbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B146E2D3160A6D6D009357C3 /* tabbar_bg.png */; };
+		B146E2D6160A6D6D009357C3 /* tabbar_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B146E2D4160A6D6D009357C3 /* tabbar_selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,24 +43,34 @@
 		B1143365160133FD006B7239 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1143366160133FD006B7239 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B11433A716014925006B7239 /* run.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = run.png; path = resource/image/run.png; sourceTree = "<group>"; };
-		B182DAC61601C09E0017BB8B /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = TabBar/TabBarController.h; sourceTree = "<group>"; };
-		B182DAC71601C09E0017BB8B /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = TabBar/TabBarController.m; sourceTree = "<group>"; };
-		B182DACA1601C0AA0017BB8B /* WorkoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutView.h; path = Workout/WorkoutView.h; sourceTree = "<group>"; };
-		B182DACB1601C0AA0017BB8B /* WorkoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutView.m; path = Workout/WorkoutView.m; sourceTree = "<group>"; };
-		B182DACC1601C0AA0017BB8B /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutViewController.h; path = Workout/WorkoutViewController.h; sourceTree = "<group>"; };
-		B182DACD1601C0AA0017BB8B /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutViewController.m; path = Workout/WorkoutViewController.m; sourceTree = "<group>"; };
-		B182DAD01601C0C40017BB8B /* HistoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryView.h; path = History/HistoryView.h; sourceTree = "<group>"; };
-		B182DAD11601C0C40017BB8B /* HistoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryView.m; path = History/HistoryView.m; sourceTree = "<group>"; };
-		B182DAD21601C0C40017BB8B /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewController.h; path = History/HistoryViewController.h; sourceTree = "<group>"; };
-		B182DAD31601C0C40017BB8B /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewController.m; path = History/HistoryViewController.m; sourceTree = "<group>"; };
-		B182DAD61601C0FE0017BB8B /* ProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileView.h; path = Profile/ProfileView.h; sourceTree = "<group>"; };
-		B182DAD71601C0FE0017BB8B /* ProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileView.m; path = Profile/ProfileView.m; sourceTree = "<group>"; };
-		B182DAD81601C0FE0017BB8B /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Profile/ProfileViewController.h; sourceTree = "<group>"; };
-		B182DAD91601C0FE0017BB8B /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Profile/ProfileViewController.m; sourceTree = "<group>"; };
-		B182DADE1601C1450017BB8B /* RoutesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutesView.h; path = Routes/RoutesView.h; sourceTree = "<group>"; };
-		B182DADF1601C1450017BB8B /* RoutesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutesView.m; path = Routes/RoutesView.m; sourceTree = "<group>"; };
-		B182DAE01601C1450017BB8B /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutesViewController.h; path = Routes/RoutesViewController.h; sourceTree = "<group>"; };
-		B182DAE11601C1450017BB8B /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutesViewController.m; path = Routes/RoutesViewController.m; sourceTree = "<group>"; };
+		B146E2A9160A6096009357C3 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = Classes/TabBar/TabBarController.h; sourceTree = "<group>"; };
+		B146E2AA160A6096009357C3 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = Classes/TabBar/TabBarController.m; sourceTree = "<group>"; };
+		B146E2AC160A60B7009357C3 /* WorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutViewController.h; path = Classes/Workout/WorkoutViewController.h; sourceTree = "<group>"; };
+		B146E2AD160A60B7009357C3 /* WorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutViewController.m; path = Classes/Workout/WorkoutViewController.m; sourceTree = "<group>"; };
+		B146E2AE160A60B7009357C3 /* WorkoutViewReady.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutViewReady.h; path = Classes/Workout/WorkoutViewReady.h; sourceTree = "<group>"; };
+		B146E2AF160A60B7009357C3 /* WorkoutViewReady.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutViewReady.m; path = Classes/Workout/WorkoutViewReady.m; sourceTree = "<group>"; };
+		B146E2B0160A60B7009357C3 /* WorkoutViewTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutViewTracking.h; path = Classes/Workout/WorkoutViewTracking.h; sourceTree = "<group>"; };
+		B146E2B1160A60B7009357C3 /* WorkoutViewTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutViewTracking.m; path = Classes/Workout/WorkoutViewTracking.m; sourceTree = "<group>"; };
+		B146E2B5160A60BF009357C3 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewController.h; path = Classes/History/HistoryViewController.h; sourceTree = "<group>"; };
+		B146E2B6160A60BF009357C3 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewController.m; path = Classes/History/HistoryViewController.m; sourceTree = "<group>"; };
+		B146E2B7160A60BF009357C3 /* HistoryViewDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewDetail.h; path = Classes/History/HistoryViewDetail.h; sourceTree = "<group>"; };
+		B146E2B8160A60BF009357C3 /* HistoryViewDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewDetail.m; path = Classes/History/HistoryViewDetail.m; sourceTree = "<group>"; };
+		B146E2B9160A60BF009357C3 /* HistoryViewList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewList.h; path = Classes/History/HistoryViewList.h; sourceTree = "<group>"; };
+		B146E2BA160A60BF009357C3 /* HistoryViewList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewList.m; path = Classes/History/HistoryViewList.m; sourceTree = "<group>"; };
+		B146E2BE160A60C8009357C3 /* NearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NearbyViewController.h; path = Classes/Nearby/NearbyViewController.h; sourceTree = "<group>"; };
+		B146E2BF160A60C8009357C3 /* NearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NearbyViewController.m; path = Classes/Nearby/NearbyViewController.m; sourceTree = "<group>"; };
+		B146E2C4160A6192009357C3 /* NearbyViewList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NearbyViewList.h; path = Classes/Nearby/NearbyViewList.h; sourceTree = "<group>"; };
+		B146E2C5160A6192009357C3 /* NearbyViewList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NearbyViewList.m; path = Classes/Nearby/NearbyViewList.m; sourceTree = "<group>"; };
+		B146E2C7160A61CD009357C3 /* NearbyViewFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NearbyViewFeed.h; path = Classes/Nearby/NearbyViewFeed.h; sourceTree = "<group>"; };
+		B146E2C8160A61CD009357C3 /* NearbyViewFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NearbyViewFeed.m; path = Classes/Nearby/NearbyViewFeed.m; sourceTree = "<group>"; };
+		B146E2CA160A6296009357C3 /* HistoryViewFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewFeed.h; path = Classes/History/HistoryViewFeed.h; sourceTree = "<group>"; };
+		B146E2CB160A6296009357C3 /* HistoryViewFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewFeed.m; path = Classes/History/HistoryViewFeed.m; sourceTree = "<group>"; };
+		B146E2CD160A632E009357C3 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Classes/Profile/ProfileViewController.h; sourceTree = "<group>"; };
+		B146E2CE160A632E009357C3 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Classes/Profile/ProfileViewController.m; sourceTree = "<group>"; };
+		B146E2D0160A6368009357C3 /* ProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileView.h; path = Classes/Profile/ProfileView.h; sourceTree = "<group>"; };
+		B146E2D1160A6368009357C3 /* ProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileView.m; path = Classes/Profile/ProfileView.m; sourceTree = "<group>"; };
+		B146E2D3160A6D6D009357C3 /* tabbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_bg.png; path = Resource/Image/tabbar_bg.png; sourceTree = "<group>"; };
+		B146E2D4160A6D6D009357C3 /* tabbar_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_selected.png; path = Resource/Image/tabbar_selected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +122,8 @@
 				B114338616013BDC006B7239 /* TabBar */,
 				B114337C16013958006B7239 /* Workout */,
 				B114338A16013FD6006B7239 /* History */,
-				B114338B16013FDF006B7239 /* Routes */,
-				B114338C16013FE3006B7239 /* Profile */,
+				B114338B16013FDF006B7239 /* Nearby */,
+				B146E2A5160A6026009357C3 /* Profile */,
 				B182DADC1601C1080017BB8B /* Resource */,
 				B114335D160133FD006B7239 /* Supporting Files */,
 			);
@@ -128,10 +144,12 @@
 		B114337C16013958006B7239 /* Workout */ = {
 			isa = PBXGroup;
 			children = (
-				B182DACA1601C0AA0017BB8B /* WorkoutView.h */,
-				B182DACB1601C0AA0017BB8B /* WorkoutView.m */,
-				B182DACC1601C0AA0017BB8B /* WorkoutViewController.h */,
-				B182DACD1601C0AA0017BB8B /* WorkoutViewController.m */,
+				B146E2AC160A60B7009357C3 /* WorkoutViewController.h */,
+				B146E2AD160A60B7009357C3 /* WorkoutViewController.m */,
+				B146E2AE160A60B7009357C3 /* WorkoutViewReady.h */,
+				B146E2AF160A60B7009357C3 /* WorkoutViewReady.m */,
+				B146E2B0160A60B7009357C3 /* WorkoutViewTracking.h */,
+				B146E2B1160A60B7009357C3 /* WorkoutViewTracking.m */,
 			);
 			name = Workout;
 			sourceTree = "<group>";
@@ -139,8 +157,8 @@
 		B114338616013BDC006B7239 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				B182DAC61601C09E0017BB8B /* TabBarController.h */,
-				B182DAC71601C09E0017BB8B /* TabBarController.m */,
+				B146E2A9160A6096009357C3 /* TabBarController.h */,
+				B146E2AA160A6096009357C3 /* TabBarController.m */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -148,32 +166,38 @@
 		B114338A16013FD6006B7239 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				B182DAD01601C0C40017BB8B /* HistoryView.h */,
-				B182DAD11601C0C40017BB8B /* HistoryView.m */,
-				B182DAD21601C0C40017BB8B /* HistoryViewController.h */,
-				B182DAD31601C0C40017BB8B /* HistoryViewController.m */,
+				B146E2B5160A60BF009357C3 /* HistoryViewController.h */,
+				B146E2B6160A60BF009357C3 /* HistoryViewController.m */,
+				B146E2B9160A60BF009357C3 /* HistoryViewList.h */,
+				B146E2BA160A60BF009357C3 /* HistoryViewList.m */,
+				B146E2CA160A6296009357C3 /* HistoryViewFeed.h */,
+				B146E2CB160A6296009357C3 /* HistoryViewFeed.m */,
+				B146E2B7160A60BF009357C3 /* HistoryViewDetail.h */,
+				B146E2B8160A60BF009357C3 /* HistoryViewDetail.m */,
 			);
 			name = History;
 			sourceTree = "<group>";
 		};
-		B114338B16013FDF006B7239 /* Routes */ = {
+		B114338B16013FDF006B7239 /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
-				B182DADE1601C1450017BB8B /* RoutesView.h */,
-				B182DADF1601C1450017BB8B /* RoutesView.m */,
-				B182DAE01601C1450017BB8B /* RoutesViewController.h */,
-				B182DAE11601C1450017BB8B /* RoutesViewController.m */,
+				B146E2BE160A60C8009357C3 /* NearbyViewController.h */,
+				B146E2BF160A60C8009357C3 /* NearbyViewController.m */,
+				B146E2C4160A6192009357C3 /* NearbyViewList.h */,
+				B146E2C5160A6192009357C3 /* NearbyViewList.m */,
+				B146E2C7160A61CD009357C3 /* NearbyViewFeed.h */,
+				B146E2C8160A61CD009357C3 /* NearbyViewFeed.m */,
 			);
-			name = Routes;
+			name = Nearby;
 			sourceTree = "<group>";
 		};
-		B114338C16013FE3006B7239 /* Profile */ = {
+		B146E2A5160A6026009357C3 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B182DAD61601C0FE0017BB8B /* ProfileView.h */,
-				B182DAD71601C0FE0017BB8B /* ProfileView.m */,
-				B182DAD81601C0FE0017BB8B /* ProfileViewController.h */,
-				B182DAD91601C0FE0017BB8B /* ProfileViewController.m */,
+				B146E2CD160A632E009357C3 /* ProfileViewController.h */,
+				B146E2CE160A632E009357C3 /* ProfileViewController.m */,
+				B146E2D0160A6368009357C3 /* ProfileView.h */,
+				B146E2D1160A6368009357C3 /* ProfileView.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -189,6 +213,8 @@
 		B182DADD1601C1140017BB8B /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				B146E2D3160A6D6D009357C3 /* tabbar_bg.png */,
+				B146E2D4160A6D6D009357C3 /* tabbar_selected.png */,
 				B11433A716014925006B7239 /* run.png */,
 			);
 			name = Image;
@@ -248,6 +274,8 @@
 			files = (
 				B1143361160133FD006B7239 /* InfoPlist.strings in Resources */,
 				B11433A816014925006B7239 /* run.png in Resources */,
+				B146E2D5160A6D6D009357C3 /* tabbar_bg.png in Resources */,
+				B146E2D6160A6D6D009357C3 /* tabbar_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,15 +288,19 @@
 			files = (
 				B1143363160133FD006B7239 /* main.m in Sources */,
 				B1143367160133FD006B7239 /* AppDelegate.m in Sources */,
-				B182DAC81601C09E0017BB8B /* TabBarController.m in Sources */,
-				B182DACE1601C0AA0017BB8B /* WorkoutView.m in Sources */,
-				B182DACF1601C0AA0017BB8B /* WorkoutViewController.m in Sources */,
-				B182DAD41601C0C40017BB8B /* HistoryView.m in Sources */,
-				B182DAD51601C0C40017BB8B /* HistoryViewController.m in Sources */,
-				B182DADA1601C0FE0017BB8B /* ProfileView.m in Sources */,
-				B182DADB1601C0FE0017BB8B /* ProfileViewController.m in Sources */,
-				B182DAE21601C1450017BB8B /* RoutesView.m in Sources */,
-				B182DAE31601C1450017BB8B /* RoutesViewController.m in Sources */,
+				B146E2AB160A6096009357C3 /* TabBarController.m in Sources */,
+				B146E2B2160A60B7009357C3 /* WorkoutViewController.m in Sources */,
+				B146E2B3160A60B7009357C3 /* WorkoutViewReady.m in Sources */,
+				B146E2B4160A60B7009357C3 /* WorkoutViewTracking.m in Sources */,
+				B146E2BB160A60BF009357C3 /* HistoryViewController.m in Sources */,
+				B146E2BC160A60BF009357C3 /* HistoryViewDetail.m in Sources */,
+				B146E2BD160A60BF009357C3 /* HistoryViewList.m in Sources */,
+				B146E2C0160A60C8009357C3 /* NearbyViewController.m in Sources */,
+				B146E2C6160A6192009357C3 /* NearbyViewList.m in Sources */,
+				B146E2C9160A61CD009357C3 /* NearbyViewFeed.m in Sources */,
+				B146E2CC160A6296009357C3 /* HistoryViewFeed.m in Sources */,
+				B146E2CF160A632E009357C3 /* ProfileViewController.m in Sources */,
+				B146E2D2160A6368009357C3 /* ProfileView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
