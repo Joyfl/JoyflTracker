@@ -19,6 +19,13 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+		
+		// Basic
+		self.title = @"History";
+		
+		// Set TabBarItem
+		self.tabBarItem.title = @"History";
+		self.tabBarItem.image = [UIImage imageNamed:@"history.png"];
     }
     return self;
 }

@@ -19,6 +19,13 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+		
+		// Basic
+		self.title = @"Nearby";
+		
+		// Set TabBarItem
+		self.tabBarItem.title = @"Nearby";
+		self.tabBarItem.image = [UIImage imageNamed:@"nearby.png"];
     }
     return self;
 }

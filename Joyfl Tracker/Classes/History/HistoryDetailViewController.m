@@ -19,6 +19,14 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+		
+		// Basic
+		self.title = @"History";
+		
+		// Set view
+		HistoryDetailView *historyDetailView = [[HistoryDetailView alloc] init];
+		[self setView:historyDetailView];
+		[historyDetailView release];
     }
     return self;
 }

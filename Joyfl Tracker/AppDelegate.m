@@ -7,15 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "WorkoutReadyViewController.h"
+#import "HistoryListViewController.h"
+#import "NearbyListViewController.h"
+#import "ProfileViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController;
 
 - (void)dealloc
 {
-    [tabBarController release];
     [_window release];
     [super dealloc];
 }
@@ -27,9 +29,46 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    // Set root view controller as tab bar controller
-    tabBarController = [[TabBarController alloc] init];
+    // Initialize TabBarController
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_bg.png"];
+    tabBarController.tabBar.selectionIndicatorImage = [UIImage imageNamed:@"tabbar_selected.png"];
+    
+	// Workout Nav & RootView
+    WorkoutReadyViewController *workoutReadyViewController = [[WorkoutReadyViewController alloc] init];
+	UINavigationController *workoutNavigationController = [[UINavigationController alloc] initWithRootViewController:workoutReadyViewController];
+	workoutNavigationController.navigationBarHidden = YES;
+	[workoutReadyViewController release];
+	
+	// History Nav & RootView
+	HistoryListViewController *historyListViewController = [[HistoryListViewController alloc] init];
+	UINavigationController *historyNavigationController = [[UINavigationController alloc] initWithRootViewController:historyListViewController];
+	[historyListViewController release];
+
+	// Nearby Nav & RootView
+	NearbyListViewController *nearbyListViewController = [[NearbyListViewController alloc] init];
+	UINavigationController *nearbyNavigationController = [[UINavigationController alloc] initWithRootViewController:nearbyListViewController];
+	[nearbyListViewController release];
+	
+	// Profile Nav & RootView
+	ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+	UINavigationController *profileNavigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
+	[profileViewController release];
+    
+	// Set view controllers
+    NSArray *controllers = [[NSArray alloc] initWithObjects:workoutNavigationController, historyNavigationController, nearbyNavigationController, profileNavigationController, nil];
+    [tabBarController setViewControllers:controllers];
+	
+	// Release
+	[workoutNavigationController release];
+	[historyNavigationController release];
+	[nearbyNavigationController release];
+	[profileNavigationController release];
+	[controllers release];
+    
+    // Set RootViewController as TabBarController
     [self.window setRootViewController:tabBarController];
+	[tabBarController release];
     
     return YES;
 }

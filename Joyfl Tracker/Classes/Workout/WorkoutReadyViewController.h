@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WorkoutReadyViewController : UIViewController
+@interface WorkoutReadyViewController : UIViewController <UIScrollViewDelegate>
+{
+	UIPageControl *pageControl;
+}
 
 @end

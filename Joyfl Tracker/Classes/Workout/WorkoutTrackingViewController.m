@@ -19,6 +19,14 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+		
+		// Basic
+		self.title = @"Tracking";
+		
+		// Set view
+		WorkoutTrackingView *workoutTrackingView = [[WorkoutTrackingView alloc] init];
+		[self setView:workoutTrackingView];
+		[workoutTrackingView release];
     }
     return self;
 }
