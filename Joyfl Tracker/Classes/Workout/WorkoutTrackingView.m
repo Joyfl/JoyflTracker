@@ -1,14 +1,14 @@
 //
-//  NearbyViewList.m
+//  WorkoutTrackingView.m
 //  Joyfl Tracker
 //
-//  Created by 설 진석 on 12. 9. 20..
+//  Created by 설 진석 on 12. 9. 21..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
-#import "NearbyViewList.h"
+#import "WorkoutTrackingView.h"
 
-@implementation NearbyViewList
+@implementation WorkoutTrackingView
 
 - (id)initWithFrame:(CGRect)frame
 {

@@ -1,14 +1,14 @@
 //
-//  WorkoutViewTracking.m
+//  HistoryDetailView.m
 //  Joyfl Tracker
 //
-//  Created by 설 진석 on 12. 9. 20..
+//  Created by 설 진석 on 12. 9. 21..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
-#import "WorkoutViewTracking.h"
+#import "HistoryDetailView.h"
 
-@implementation WorkoutViewTracking
+@implementation HistoryDetailView
 
 - (id)initWithFrame:(CGRect)frame
 {

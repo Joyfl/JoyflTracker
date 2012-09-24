@@ -1,34 +1,24 @@
 //
-//  NearbyViewController.m
+//  HistoryDetailViewController.m
 //  Joyfl Tracker
 //
-//  Created by 설 진석 on 12. 9. 20..
+//  Created by 설 진석 on 12. 9. 21..
 //  Copyright (c) 2012년 연세대학교. All rights reserved.
 //
 
-#import "NearbyViewController.h"
+#import "HistoryDetailViewController.h"
 
-@interface NearbyViewController ()
+@interface HistoryDetailViewController ()
 
 @end
 
-@implementation NearbyViewController
-
-@synthesize nearbyViewList;
+@implementation HistoryDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
-        // Set TabBarItem
-        [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Nearby" image:[UIImage imageNamed:@"nearby.png"] tag:3]];
-        [[self tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"nearby_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"nearby.png"]];
-        
-        // Set first view as NearbyViewList
-        nearbyViewList = [[NearbyViewList alloc] init];
-        [self setView:nearbyViewList];
     }
     return self;
 }
