@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WorkoutSelectionView.h"
 
 @interface WorkoutReadyViewController : UIViewController <UIScrollViewDelegate>
 {
-	UIPageControl *pageControl;
+	UILabel *descriptionLabel;
 }
 
 @end

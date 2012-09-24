@@ -37,6 +37,9 @@
 		B1804AA9160B8C3600F742DE /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1804AA5160B8C3600F742DE /* Button@2x.png */; };
 		B1804AAA160B8C3600F742DE /* ButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = B1804AA6160B8C3600F742DE /* ButtonHighlighted.png */; };
 		B1804AAB160B8C3600F742DE /* ButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1804AA7160B8C3600F742DE /* ButtonHighlighted@2x.png */; };
+		B1A268121610A28C00BACBBF /* WorkoutSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A268111610A28C00BACBBF /* WorkoutSelectionView.m */; };
+		B1A268321610FB4400BACBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1A268341610FB4400BACBBF /* Localizable.strings */; };
+		B1A268381611018E00BACBBF /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A268371611018E00BACBBF /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +88,13 @@
 		B1804AA5160B8C3600F742DE /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button@2x.png"; path = "Resource/Image/Button@2x.png"; sourceTree = "<group>"; };
 		B1804AA6160B8C3600F742DE /* ButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonHighlighted.png; path = Resource/Image/ButtonHighlighted.png; sourceTree = "<group>"; };
 		B1804AA7160B8C3600F742DE /* ButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ButtonHighlighted@2x.png"; path = "Resource/Image/ButtonHighlighted@2x.png"; sourceTree = "<group>"; };
+		B1A268101610A28C00BACBBF /* WorkoutSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutSelectionView.h; path = Classes/Workout/WorkoutSelectionView.h; sourceTree = "<group>"; };
+		B1A268111610A28C00BACBBF /* WorkoutSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutSelectionView.m; path = Classes/Workout/WorkoutSelectionView.m; sourceTree = "<group>"; };
+		B1A268331610FB4400BACBBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1A268361611018E00BACBBF /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Classes/Common.h; sourceTree = "<group>"; };
+		B1A268371611018E00BACBBF /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Common.m; path = Classes/Common.m; sourceTree = "<group>"; };
+		B1A2683D1611080800BACBBF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1A2683E16110C2700BACBBF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +151,8 @@
 		B114335C160133FD006B7239 /* Joyfl Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				B1A268361611018E00BACBBF /* Common.h */,
+				B1A268371611018E00BACBBF /* Common.m */,
 				B1143365160133FD006B7239 /* AppDelegate.h */,
 				B1143366160133FD006B7239 /* AppDelegate.m */,
 				B114337C16013958006B7239 /* Workout */,
@@ -158,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				B114335E160133FD006B7239 /* Joyfl Tracker-Info.plist */,
+				B1A268341610FB4400BACBBF /* Localizable.strings */,
 				B114335F160133FD006B7239 /* InfoPlist.strings */,
 				B1143362160133FD006B7239 /* main.m */,
 				B1143364160133FD006B7239 /* Joyfl Tracker-Prefix.pch */,
@@ -170,6 +183,8 @@
 			children = (
 				B1804A86160B7E6600F742DE /* WorkoutReadyViewController.h */,
 				B1804A87160B7E6600F742DE /* WorkoutReadyViewController.m */,
+				B1A268101610A28C00BACBBF /* WorkoutSelectionView.h */,
+				B1A268111610A28C00BACBBF /* WorkoutSelectionView.m */,
 				B1804A8C160B7EB300F742DE /* WorkoutTrackingViewController.h */,
 				B1804A8D160B7EB300F742DE /* WorkoutTrackingViewController.m */,
 				B1804A8F160B7EC800F742DE /* WorkoutTrackingView.h */,
@@ -284,6 +299,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ko,
+				es,
 			);
 			mainGroup = B1143347160133FD006B7239;
 			productRefGroup = B1143353160133FD006B7239 /* Products */;
@@ -314,6 +331,7 @@
 				B1804AA9160B8C3600F742DE /* Button@2x.png in Resources */,
 				B1804AAA160B8C3600F742DE /* ButtonHighlighted.png in Resources */,
 				B1804AAB160B8C3600F742DE /* ButtonHighlighted@2x.png in Resources */,
+				B1A268321610FB4400BACBBF /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +355,8 @@
 				B1804A9D160B805800F742DE /* NearbyListViewController.m in Sources */,
 				B1804AA0160B80B800F742DE /* ProfileEditViewController.m in Sources */,
 				B1804AA3160B80D200F742DE /* ProfileEditView.m in Sources */,
+				B1A268121610A28C00BACBBF /* WorkoutSelectionView.m in Sources */,
+				B1A268381611018E00BACBBF /* Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +369,16 @@
 				B1143360160133FD006B7239 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1A268341610FB4400BACBBF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1A268331610FB4400BACBBF /* en */,
+				B1A2683D1611080800BACBBF /* es */,
+				B1A2683E16110C2700BACBBF /* ko */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

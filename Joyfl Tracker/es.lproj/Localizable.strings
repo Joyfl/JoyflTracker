@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Joyfl Tracker
+  
+  Created by 설 진석 on 12. 9. 25..
+  Copyright (c) 2012년 연세대학교. All rights reserved.
+*/
+
+// Common
+WORKOUT = "Entrenamiento";
+
+// Button
+BUTTON_START_WORKOUT = "Iniciar Entrenamiento";
+
+// Message
+MESSAGE_START_WORKOUT = "¿Qué vas a hacer?";

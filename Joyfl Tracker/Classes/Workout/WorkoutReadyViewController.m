@@ -21,52 +21,40 @@
         // Custom initialization
 		
 		// Basic
-		self.title = @"Start Workout";
+		//self.title = NSLocalizedString(@"WORKOUT", nil);
+		self.title = L(@"WORKOUT");
+		//@"Start Workout";
 		
 		// Set TabBarItem
-		self.tabBarItem.title = @"Workout";
+		self.tabBarItem.title = L(@"WORKOUT");;
 		self.tabBarItem.image = [UIImage imageNamed:@"workout.png"];
 		
-		// Make description label
-		UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-		descriptionLabel.text = @"text";
-		descriptionLabel.textAlignment = UITextAlignmentCenter;
+		// Make title label
+		UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 90)];
+		titleLabel.text = L(@"MESSAGE_START_WORKOUT");
+		titleLabel.textAlignment = UITextAlignmentCenter;
+		[self.view addSubview:titleLabel];
+		[titleLabel release];
 		
-		// Add description label
-		[self.view addSubview:descriptionLabel];
-		[descriptionLabel release];
-		
-		// Make start button
-		UIButton *startButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		startButton.frame = CGRectMake(80, 340, 162, 42);
-		[startButton setTitle:@"Start Workout" forState:UIControlStateNormal];
-		[startButton setTitleColor:[UIColor colorWithRed:90.0f/255.0f green:90.0f/255.0f blue:90.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
-		[startButton setTitleColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0] forState:UIControlStateHighlighted];
-		[startButton setBackgroundImage:[UIImage imageNamed:@"Button.png"] forState:UIControlStateNormal];
-		[startButton setBackgroundImage:[UIImage imageNamed:@"ButtonHighlighted.png"] forState:UIControlStateHighlighted];
-		[startButton addTarget:self action:@selector(startButtonDidTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
-		
-		// Add start button
-		[self.view addSubview:startButton];
-		[startButton release];
-		
-		// Make selection scroll
-		UIScrollView *selectionScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 80, 320, 240)];
+		// Make selection scroll view
+		UIScrollView *selectionScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(60, 0, 200, 200)];
 		selectionScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-		selectionScrollView.backgroundColor = [UIColor darkGrayColor];
 		selectionScrollView.pagingEnabled = YES;
 		selectionScrollView.showsHorizontalScrollIndicator = NO;
 		selectionScrollView.delegate = self;
+		selectionScrollView.clipsToBounds = NO;
 		
-		// Make page control
-		pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 320, 320, 20)];
-		pageControl.numberOfPages = 5;
-		[pageControl setBackgroundColor:[UIColor grayColor]];
-		[self.view addSubview:pageControl];
+		// Make selection view
+		WorkoutSelectionView *selectionView = [[WorkoutSelectionView alloc] initWithFrame:CGRectMake(0, 80, 320, 200)];
+		selectionView.scrollView = selectionScrollView;
+		[selectionView addSubview:selectionScrollView];
+		[selectionScrollView release];
+		[self.view addSubview:selectionView];
+		[selectionView release];
 		
 		// Create dummy data
 		int elementNum = 5;
-		CGSize elementSize = CGSizeMake(320, 240);
+		CGSize elementSize = CGSizeMake(200, 200);
 		for(int i = 0; i < elementNum; i++)
 		{
 			UIView *subView = [[UIView alloc] init];
@@ -77,9 +65,24 @@
 		}
 		selectionScrollView.contentSize = CGSizeMake(elementNum * elementSize.width, elementSize.height);
 		
-		// Add selection scroll
-		[self.view addSubview:selectionScrollView];
-		[selectionScrollView release];
+		// Make description label
+		descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 280, 320, 70)];
+		descriptionLabel.text = @"page 1";
+		descriptionLabel.textAlignment = UITextAlignmentCenter;
+		[self.view addSubview:descriptionLabel];
+		[descriptionLabel release];
+		
+		// Make start button
+		UIButton *startButton = [UIButton buttonWithType:UIButtonTypeCustom];
+		startButton.frame = CGRectMake(80, 340, 162, 42);
+		[startButton setTitle:L(@"BUTTON_START_WORKOUT") forState:UIControlStateNormal];
+		[startButton setTitleColor:[UIColor colorWithRed:90.0f/255.0f green:90.0f/255.0f blue:90.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
+		[startButton setTitleColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0] forState:UIControlStateHighlighted];
+		[startButton setBackgroundImage:[UIImage imageNamed:@"Button.png"] forState:UIControlStateNormal];
+		[startButton setBackgroundImage:[UIImage imageNamed:@"ButtonHighlighted.png"] forState:UIControlStateHighlighted];
+		[startButton addTarget:self action:@selector(startButtonDidTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
+		[self.view addSubview:startButton];
+		[startButton release];
     }
     return self;
 }
@@ -108,7 +111,11 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
 	// It gives buffer: 40 pixels
-	[pageControl setCurrentPage:(scrollView.contentOffset.x + 40) / 320];
+	// [pageControl setCurrentPage:(scrollView.contentOffset.x + 40) / 200];
+	
+	// dummy string
+	if(scrollView.contentOffset.x >= 240)
+		descriptionLabel.text = @"page 2";
 }
 
 
