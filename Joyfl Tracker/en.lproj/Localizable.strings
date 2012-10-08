@@ -8,9 +8,24 @@
 
 // Common
 WORKOUT = "Workout";
+HISTORY = "History";
+NEARBY = "Nearby";
+PROFILE = "Profile";
+
+// Type
+TYPE_RUNNING = "Running";
+TYPE_WALKING = "Walking";
+TYPE_HIKING = "Hiking";
+TYPE_CYCLING = "Cycling";
+TYPE_SKIING = "Skiing";
+TYPE_SKATING = "Skating";
+TYPE_OTHER = "Other";
 
 // Button
-BUTTON_START_WORKOUT = "Start Workout";
+BUTTON_WORKOUT_START = "Start Workout";
+BUTTON_WORKOUT_PAUSE = "Pause";
+BUTTON_WORKOUT_RESUME = "Resume";
+BUTTON_WORKOUT_END = "End";
 
 // Message
 MESSAGE_START_WORKOUT = "Which work will you do?";

@@ -7,10 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "WorkoutReadyViewController.h"
-#import "HistoryListViewController.h"
-#import "NearbyListViewController.h"
-#import "ProfileViewController.h"
 
 @implementation AppDelegate
 
@@ -23,7 +19,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{	
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -31,9 +27,9 @@
     
     // Initialize TabBarController
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabbar_bg.png"];
-    tabBarController.tabBar.selectionIndicatorImage = [UIImage imageNamed:@"tabbar_selected.png"];
-    
+    //tabBarController.tabBar.backgroundImage = [UIImage imageNamed:IMAGE_TABBAR_BACKGROUND];
+    //tabBarController.tabBar.selectionIndicatorImage = [UIImage imageNamed:IMAGE_TABBAR_SELECTED];
+	
 	// Workout Nav & RootView
     WorkoutReadyViewController *workoutReadyViewController = [[WorkoutReadyViewController alloc] init];
 	UINavigationController *workoutNavigationController = [[UINavigationController alloc] initWithRootViewController:workoutReadyViewController];
@@ -44,11 +40,6 @@
 	HistoryListViewController *historyListViewController = [[HistoryListViewController alloc] init];
 	UINavigationController *historyNavigationController = [[UINavigationController alloc] initWithRootViewController:historyListViewController];
 	[historyListViewController release];
-
-	// Nearby Nav & RootView
-	NearbyListViewController *nearbyListViewController = [[NearbyListViewController alloc] init];
-	UINavigationController *nearbyNavigationController = [[UINavigationController alloc] initWithRootViewController:nearbyListViewController];
-	[nearbyListViewController release];
 	
 	// Profile Nav & RootView
 	ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
@@ -56,13 +47,12 @@
 	[profileViewController release];
     
 	// Set view controllers
-    NSArray *controllers = [[NSArray alloc] initWithObjects:workoutNavigationController, historyNavigationController, nearbyNavigationController, profileNavigationController, nil];
+    NSArray *controllers = [[NSArray alloc] initWithObjects:workoutNavigationController, historyNavigationController, profileNavigationController, nil];
     [tabBarController setViewControllers:controllers];
 	
 	// Release
 	[workoutNavigationController release];
 	[historyNavigationController release];
-	[nearbyNavigationController release];
 	[profileNavigationController release];
 	[controllers release];
     

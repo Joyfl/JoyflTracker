@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "WorkoutReadyViewController.h"
+#import "HistoryListViewController.h"
+#import "ProfileViewController.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
 	

@@ -1,5 +1,5 @@
 //
-//  WorkoutTrackingView.h
+//  HistoryListViewController.h
 //  Joyfl Tracker
 //
 //  Created by 설 진석 on 12. 9. 21..
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WorkoutTrackingView : UIView
+@interface HistoryListViewController : UITableViewController
 
 @end
