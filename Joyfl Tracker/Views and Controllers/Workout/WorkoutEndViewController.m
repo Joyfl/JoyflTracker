@@ -20,7 +20,11 @@
     if (self) {
         // Custom initialization
 		
+		UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneButtonClicked)];
+		self.navigationItem.rightBarButtonItem = doneButton;
+		
 		[self.view setBackgroundColor:[UIColor whiteColor]];
+		[doneButton release];
 		
 		UITableView *menu = [[UITableView alloc] initWithFrame:CGRectMake(20, 20, 200, 200) style:UITableViewStyleGrouped];
 		
@@ -42,5 +46,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark -
+#pragma mark ControlEventSelectors
+
+- (void)doneButtonClicked
+{
+	UITabBarController *tabBarController = (UITabBarController *)self.presentingViewController;
+	[(UINavigationController *)tabBarController.selectedViewController popViewControllerAnimated:NO];	
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

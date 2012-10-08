@@ -77,7 +77,7 @@
 		
 		// Make resume button
 		resumeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		resumeButton.frame = CGRectMake(80, 382, 75, 42);
+		resumeButton.frame = CGRectMake(80, 382, 80, 42);
 		[resumeButton setTitle:L(@"BUTTON_WORKOUT_RESUME") forState:UIControlStateNormal];
 		[resumeButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON] forState:UIControlStateNormal];
 		[resumeButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON_HIGHLIGHTED] forState:UIControlStateHighlighted];
@@ -87,7 +87,7 @@
 		
 		// Make end button
 		endButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		endButton.frame = CGRectMake(182, 382, 70, 42);
+		endButton.frame = CGRectMake(162, 382, 80, 42);
 		[endButton setTitle:L(@"BUTTON_WORKOUT_END") forState:UIControlStateNormal];
 		[endButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON] forState:UIControlStateNormal];
 		[endButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON_HIGHLIGHTED] forState:UIControlStateHighlighted];
@@ -137,7 +137,7 @@
 	WorkoutEndViewController *workoutEndViewController = [[WorkoutEndViewController alloc] init];
 	UINavigationController *workoutEndNavigationController = [[UINavigationController alloc] initWithRootViewController:workoutEndViewController];
 	[workoutEndViewController release];
-	[self presentModalViewController:workoutEndNavigationController animated:YES];
+	[self presentViewController:workoutEndNavigationController animated:YES completion:nil];
 	[workoutEndNavigationController release];
 }
 
