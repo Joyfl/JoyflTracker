@@ -48,7 +48,7 @@
 		B197B7E1161133A800B35C52 /* WorkoutBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B197B7E0161133A800B35C52 /* WorkoutBackground.jpg */; };
 		B1A268321610FB4400BACBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1A268341610FB4400BACBBF /* Localizable.strings */; };
 		B1A2684116110E2200BACBBF /* WorkoutTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */; };
-		B1DDAA6C1625BCD000E3B358 /* WorkoutTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDAA6B1625BCD000E3B358 /* WorkoutTypeManager.m */; };
+		B1DDAA781625D2E800E3B358 /* WorkoutTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,8 +108,8 @@
 		B1A268331610FB4400BACBBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1A2683F16110E2200BACBBF /* WorkoutTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutTypeModel.h; path = Models/WorkoutTypeModel.h; sourceTree = "<group>"; };
 		B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTypeModel.m; path = Models/WorkoutTypeModel.m; sourceTree = "<group>"; };
-		B1DDAA6A1625BCD000E3B358 /* WorkoutTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutTypeManager.h; sourceTree = "<group>"; };
-		B1DDAA6B1625BCD000E3B358 /* WorkoutTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutTypeManager.m; sourceTree = "<group>"; };
+		B1DDAA761625D2E800E3B358 /* WorkoutTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutTypeManager.h; path = Models/WorkoutTypeManager.h; sourceTree = "<group>"; };
+		B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTypeManager.m; path = Models/WorkoutTypeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,13 +169,11 @@
 		B114335C160133FD006B7239 /* Joyfl Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				B11F086F1620184300E2DD89 /* Common.h */,
-				B11F08701620184300E2DD89 /* Common.m */,
 				B1143365160133FD006B7239 /* AppDelegate.h */,
 				B1143366160133FD006B7239 /* AppDelegate.m */,
-				B114337C16013958006B7239 /* Workout */,
-				B114338A16013FD6006B7239 /* History */,
-				B146E2A5160A6026009357C3 /* Profile */,
+				B11F086F1620184300E2DD89 /* Common.h */,
+				B11F08701620184300E2DD89 /* Common.m */,
+				B1DDAA751625D2C000E3B358 /* Views & Controllers */,
 				B1ED019B160C4B96007961AF /* Models */,
 				B182DADC1601C1080017BB8B /* Resource */,
 				B114335D160133FD006B7239 /* Supporting Files */,
@@ -313,11 +311,21 @@
 			path = Resource/Workout;
 			sourceTree = "<group>";
 		};
+		B1DDAA751625D2C000E3B358 /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B114337C16013958006B7239 /* Workout */,
+				B114338A16013FD6006B7239 /* History */,
+				B146E2A5160A6026009357C3 /* Profile */,
+			);
+			name = "Views & Controllers";
+			sourceTree = "<group>";
+		};
 		B1ED019B160C4B96007961AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B1DDAA6A1625BCD000E3B358 /* WorkoutTypeManager.h */,
-				B1DDAA6B1625BCD000E3B358 /* WorkoutTypeManager.m */,
+				B1DDAA761625D2E800E3B358 /* WorkoutTypeManager.h */,
+				B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */,
 				B1A2683F16110E2200BACBBF /* WorkoutTypeModel.h */,
 				B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */,
 				B1195D2C161A0EA200C5F9F3 /* WorkoutModel.h */,
@@ -426,7 +434,7 @@
 				B11F08711620184400E2DD89 /* Common.m in Sources */,
 				B11F087B1620185E00E2DD89 /* ProfileEditViewController.m in Sources */,
 				B11F087D1620185E00E2DD89 /* ProfileViewController.m in Sources */,
-				B1DDAA6C1625BCD000E3B358 /* WorkoutTypeManager.m in Sources */,
+				B1DDAA781625D2E800E3B358 /* WorkoutTypeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
