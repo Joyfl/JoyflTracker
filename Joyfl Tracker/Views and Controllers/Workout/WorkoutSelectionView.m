@@ -24,8 +24,8 @@
 
 - (UIView *)hitTest:(CGPoint) point withEvent:(UIEvent *)event {
 	if ([self pointInside:point withEvent:event]) {
-		if(self.scrollView)
-			return self.scrollView;
+		if(scrollView)
+			return scrollView;
 		else return nil;
 	}
 	return nil;

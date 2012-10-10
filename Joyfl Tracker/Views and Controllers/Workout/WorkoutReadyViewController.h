@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "WorkoutSelectionView.h"
-#import "WorkoutTypeModel.h"
 #import "WorkoutTrackingViewController.h"
+#import "WorkoutTypeManager.h"
 
 @interface WorkoutReadyViewController : UIViewController <UIScrollViewDelegate>
 {
 	UILabel *descriptionLabel;
-	NSMutableArray *workoutTypes;
+	WorkoutTypeManager *manager;
+	UIScrollView *selectionScrollView;
 }
 
-- (void)makeWorkoutTypes;
-- (void)addWorkoutTypes:(UIScrollView *)scrollView;
+- (void)addWorkoutTypes;
 
 @end

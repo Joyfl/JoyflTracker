@@ -13,12 +13,12 @@
 	NSInteger typeId;
 	NSString *typeName;
 	UIImage *image;
+	UIImage *icon;
 }
 
 @property (nonatomic, assign) NSInteger typeId;
 @property (nonatomic, retain) NSString *typeName;
 @property (nonatomic, retain) UIImage *image;
-
-- (id)init:(NSInteger)_typeId:(NSString *)_typeName:(NSString *)_image;
+@property (nonatomic, retain) UIImage *icon;
 
 @end

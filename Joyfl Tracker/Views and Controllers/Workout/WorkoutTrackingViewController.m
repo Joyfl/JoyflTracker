@@ -14,7 +14,7 @@
 
 @implementation WorkoutTrackingViewController
 
-@synthesize durationLabel, distanceLabel, calorieLabel, mapView, signalImage, pauseButton, resumeButton, endButton;
+@synthesize durationLabel, distanceLabel, calorieLabel, mapView, signalImage, pauseButton, resumeButton, endButton, workout;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -113,6 +113,12 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)setWorkoutType:(NSInteger)typeId
+{
+	workout = [[WorkoutModel alloc] init];
+	workout.typeId = typeId;
 }
 
 #pragma mark -

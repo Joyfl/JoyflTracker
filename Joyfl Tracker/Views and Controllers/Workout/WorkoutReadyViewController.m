@@ -22,6 +22,7 @@
 		
 		// Basic
 		self.title = L(@"WORKOUT");
+		manager = [WorkoutTypeManager manager];
 		
 		// Set background
 		UIImageView *backgroundImageView = [[UIImageView alloc] init];
@@ -43,7 +44,7 @@
 		[titleLabel release];
 		
 		// Make selection scroll view
-		UIScrollView *selectionScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(60, 0, 200, 200)];
+		selectionScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(60, 0, 200, 200)];
 		selectionScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		selectionScrollView.pagingEnabled = YES;
 		selectionScrollView.showsHorizontalScrollIndicator = NO;
@@ -60,12 +61,11 @@
 		[selectionView release];
 		
 		// Create data
-		[self makeWorkoutTypes];
-		[self addWorkoutTypes:selectionScrollView];
+		[self addWorkoutTypes];
 		
 		// Make description label
 		descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 280, 320, 70)];
-		descriptionLabel.text = [[workoutTypes objectAtIndex:0] typeName];
+		descriptionLabel.text = [[manager.types objectAtIndex:0] typeName];
 		descriptionLabel.textAlignment = UITextAlignmentCenter;
 		[descriptionLabel setBackgroundColor:[UIColor clearColor]];
 		[self.view addSubview:descriptionLabel];
@@ -102,48 +102,19 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)makeWorkoutTypes
+- (void)addWorkoutTypes
 {
-	workoutTypes = [[NSMutableArray alloc] init];
-	
-	WorkoutTypeModel *typeRunning = [[WorkoutTypeModel alloc] init:0:L(@"TYPE_RUNNING"):IMAGE_TYPE_RUNNING];
-	WorkoutTypeModel *typeWalking = [[WorkoutTypeModel alloc] init:1:L(@"TYPE_WALKING"):IMAGE_TYPE_WALKING];
-	WorkoutTypeModel *typeHiking = [[WorkoutTypeModel alloc] init:2:L(@"TYPE_HIKING"):IMAGE_TYPE_HIKING];
-	WorkoutTypeModel *typeCycling = [[WorkoutTypeModel alloc] init:3:L(@"TYPE_CYCLING"):IMAGE_TYPE_CYCLING];
-	WorkoutTypeModel *typeSkiing = [[WorkoutTypeModel alloc] init:4:L(@"TYPE_SKIING"):IMAGE_TYPE_SKIING];
-	WorkoutTypeModel *typeSkating = [[WorkoutTypeModel alloc] init:5:L(@"TYPE_SKATING"):IMAGE_TYPE_SKATING];
-	WorkoutTypeModel *typeOther = [[WorkoutTypeModel alloc] init:6:L(@"TYPE_OTHER"):IMAGE_TYPE_OTHER];
-	
-	[workoutTypes addObject:typeRunning];
-	[workoutTypes addObject:typeWalking];
-	[workoutTypes addObject:typeHiking];
-	[workoutTypes addObject:typeCycling];
-	[workoutTypes addObject:typeSkiing];
-	[workoutTypes addObject:typeSkating];
-	[workoutTypes addObject:typeOther];
-	
-	[typeRunning release];
-	[typeWalking release];
-	[typeHiking release];
-	[typeCycling release];
-	[typeSkiing release];
-	[typeSkating release];
-	[typeOther release];
-}
-
-- (void)addWorkoutTypes:(UIScrollView *)scrollView
-{
-	int elementNum = [workoutTypes count];
+	int elementNum = [manager.types count];
 	CGSize elementSize = CGSizeMake(200, 200);
 	for(int i = 0; i < elementNum; i++)
 	{
 		UIImageView *imageView = [[UIImageView alloc] init];
-		imageView.image = [[workoutTypes objectAtIndex:i] image];
+		imageView.image = [[manager.types objectAtIndex:i] image];
 		imageView.frame = CGRectMake(i * elementSize.width, 0, elementSize.width, elementSize.height);
-		[scrollView addSubview:imageView];
+		[selectionScrollView addSubview:imageView];
 		[imageView release];
 	}
-	scrollView.contentSize = CGSizeMake(elementNum * elementSize.width, elementSize.height);
+	selectionScrollView.contentSize = CGSizeMake(elementNum * elementSize.width, elementSize.height);
 }
 
 
@@ -155,8 +126,8 @@
 	// It gives buffer: half pixels
 	int index = ((scrollView.contentOffset.x + 100) / 200);
 	if(index < 0) index = 0;
-	if(index >= workoutTypes.count) index = workoutTypes.count - 1;
-	descriptionLabel.text = [[workoutTypes objectAtIndex:index] typeName];
+	if(index >= [manager.types count]) index = [manager.types count] - 1;
+	descriptionLabel.text = [[manager.types objectAtIndex:index] typeName];
 }
 
 
@@ -165,8 +136,12 @@
 
 - (void)startButtonDidTouchUpInside
 {
+	int index = ((selectionScrollView.contentOffset.x + 100) / 200);
+	if(index < 0) index = 0;
+	if(index >= [manager.types count]) index = [manager.types count] - 1;
 	WorkoutTrackingViewController *workoutTrackingViewController = [[WorkoutTrackingViewController alloc] init];
 	workoutTrackingViewController.hidesBottomBarWhenPushed = YES;
+	[workoutTrackingViewController setWorkoutType:index];
 	[self.navigationController pushViewController:workoutTrackingViewController animated:YES];
 	[workoutTrackingViewController release];
 }

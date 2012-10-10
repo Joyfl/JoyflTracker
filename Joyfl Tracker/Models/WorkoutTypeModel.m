@@ -12,12 +12,4 @@
 
 @synthesize typeId, typeName, image;
 
-- (id)init:(NSInteger)_typeId:(NSString *)_typeName:(NSString *)_image;
-{
-	typeId = _typeId;
-	typeName = _typeName;
-	image = [UIImage imageNamed:_image];
-	return self;
-}
-
 @end

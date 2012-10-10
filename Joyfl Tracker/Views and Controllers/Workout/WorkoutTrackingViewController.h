@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "WorkoutEndViewController.h"
+#import "WorkoutModel.h"
 
 @interface WorkoutTrackingViewController : UIViewController <MKMapViewDelegate>
 {
@@ -21,6 +22,7 @@
 	UIButton *pauseButton;
 	UIButton *resumeButton;
 	UIButton *endButton;
+	WorkoutModel *workout;
 }
 
 @property (nonatomic, retain) UILabel *durationLabel;
@@ -31,5 +33,8 @@
 @property (nonatomic, retain) UIButton *pauseButton;
 @property (nonatomic, retain) UIButton *resumeButton;
 @property (nonatomic, retain) UIButton *endButton;
+@property (nonatomic, retain) WorkoutModel *workout;
+
+- (void)setWorkoutType:(NSInteger)typeId;
 
 @end

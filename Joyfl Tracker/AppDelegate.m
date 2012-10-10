@@ -59,7 +59,7 @@
     // Set RootViewController as TabBarController
     [self.window setRootViewController:tabBarController];
 	[tabBarController release];
-    
+	
     return YES;
 }
 

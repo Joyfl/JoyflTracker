@@ -23,11 +23,12 @@
 
 #define IMAGE_TYPE_RUNNING			@"TypeRunning.png"
 #define IMAGE_TYPE_WALKING			@"TypeWalking.png"
-#define IMAGE_TYPE_HIKING			@"TypeHiking.png"
 #define IMAGE_TYPE_CYCLING			@"TypeCycling.png"
-#define IMAGE_TYPE_SKIING			@"TypeSkiing.png"
-#define IMAGE_TYPE_SKATING			@"TypeSkating.png"
 #define IMAGE_TYPE_OTHER			@"TypeOther.png"
 
+#define ICON_TYPE_RUNNING			@"TypeRunningIcon.png"
+#define ICON_TYPE_WALKING			@"TypeWalkingIcon.png"
+#define ICON_TYPE_CYCLING			@"TypeCyclingIcon.png"
+#define ICON_TYPE_OTHER				@"TypeOtherIcon.png"
 
 extern NSString* L(NSString *key);
