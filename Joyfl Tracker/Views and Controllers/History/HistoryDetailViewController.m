@@ -22,6 +22,7 @@
 		
 		// Basic
 		self.title = @"History";
+		manager = [WorkoutTypeManager manager];
     }
     return self;
 }

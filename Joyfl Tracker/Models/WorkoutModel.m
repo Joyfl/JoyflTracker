@@ -10,11 +10,12 @@
 
 @implementation WorkoutModel
 
-@synthesize workoutId, userId, typeId, userName, date, thumbnail, route, duration, distance, calorie, speed, averageSpeed, maximumSpeed;
+@synthesize workoutId, userId, typeId, userName, date, thumbnail, route, duration, distance, calorie, memo, speed, averageSpeed, maximumSpeed;
 
 - (id)init
 {
 	self = [super init];
+	memo = @"";
 	averageSpeed = 0;
 	maximumSpeed = 0;
 	return self;

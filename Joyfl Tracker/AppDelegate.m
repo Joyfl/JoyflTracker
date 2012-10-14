@@ -42,7 +42,7 @@
 	[historyListViewController release];
 	
 	// Profile Nav & RootView
-	ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
+	ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithStyle:UITableViewStyleGrouped];
 	UINavigationController *profileNavigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
 	[profileViewController release];
     

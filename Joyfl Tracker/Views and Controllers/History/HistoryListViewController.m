@@ -22,10 +22,32 @@
 		
 		// Basic
 		self.title = L(@"HISTORY");
+		manager = [WorkoutTypeManager manager];
+		workouts = [[NSMutableArray alloc] init];
 		
 		// Set TabBarItem
-		self.tabBarItem.title = L(@"History");
+		self.tabBarItem.title = L(@"HISTORY");
 		//self.tabBarItem.image = [UIImage imageNamed:@"history.png"];
+		
+		// Create dummy
+		WorkoutModel *temp = [[WorkoutModel alloc] init];
+		temp.typeId = 0;
+		temp.duration = 0;
+		temp.distance = 0;
+		temp.calorie = 0;
+		temp.date = @"07 Feb 2012";
+		temp.memo = @"asdf";
+		[workouts addObject:temp];
+		[temp release];
+		temp = [[WorkoutModel alloc] init];
+		temp.typeId = 0;
+		temp.duration = 0;
+		temp.distance = 0;
+		temp.calorie = 0;
+		temp.date = @"07 Feb 2012";
+		temp.memo = @"asdf";
+		[workouts addObject:temp];
+		[temp release];
     }
     return self;
 }
@@ -57,25 +79,34 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [workouts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+	
     // Configure the cell...
-    
+	if(cell == nil)
+	{
+		cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
+		[cell autorelease];
+	}
+	
+	UILabel *temp1 = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 40, 20)];
+	temp1.text = ((WorkoutModel *)[workouts objectAtIndex:[indexPath row]]).date;
+	
+	[cell addSubview:temp1];
+	
+	[temp1 release];
     return cell;
 }
 
@@ -130,6 +161,30 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat result;
+	
+    switch ([indexPath row])
+    {
+        case 0:
+        {
+            result = 400.0f;
+            break;
+        }
+        case 1:
+        {
+            result = 300.0f;
+            break;
+        }
+		default:
+			result = 0;
+			break;
+    }
+    return result;
 }
 
 @end

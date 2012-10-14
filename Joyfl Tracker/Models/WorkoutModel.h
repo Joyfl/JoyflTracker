@@ -10,23 +10,21 @@
 
 @interface WorkoutModel : NSObject
 {
-	// id
 	NSInteger workoutId;
 	NSInteger userId;
 	NSInteger typeId;
 	
-	// workout info
 	NSString *userName;
 	NSString *date;
 	UIImage *thumbnail;
 	
-	// tracking data
 	NSMutableArray *route;
 	NSTimeInterval duration;
 	CGFloat distance;
 	CGFloat calorie;
 	
-	// hidden data
+	NSString *memo;
+	
 	NSMutableArray *speed;
 	CGFloat averageSpeed;
 	CGFloat maximumSpeed;
@@ -44,6 +42,8 @@
 @property (nonatomic, assign) NSTimeInterval duration;
 @property (nonatomic, assign) CGFloat distance;
 @property (nonatomic, assign) CGFloat calorie;
+
+@property (nonatomic, retain) NSString *memo;
 
 @property (nonatomic, retain) NSMutableArray *speed;
 @property (nonatomic, assign) CGFloat averageSpeed;

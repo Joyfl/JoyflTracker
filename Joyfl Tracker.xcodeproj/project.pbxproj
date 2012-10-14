@@ -15,22 +15,24 @@
 		B1143361160133FD006B7239 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B114335F160133FD006B7239 /* InfoPlist.strings */; };
 		B1143363160133FD006B7239 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1143362160133FD006B7239 /* main.m */; };
 		B1143367160133FD006B7239 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1143366160133FD006B7239 /* AppDelegate.m */; };
+		B114BDD8162A3F750072B6B1 /* TypeCyclingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B114BDD4162A3F750072B6B1 /* TypeCyclingIcon.png */; };
+		B114BDD9162A3F750072B6B1 /* TypeOtherIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B114BDD5162A3F750072B6B1 /* TypeOtherIcon.png */; };
+		B114BDDA162A3F750072B6B1 /* TypeRunningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B114BDD6162A3F750072B6B1 /* TypeRunningIcon.png */; };
+		B114BDDB162A3F750072B6B1 /* TypeWalkingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B114BDD7162A3F750072B6B1 /* TypeWalkingIcon.png */; };
 		B1195D2A161A051400C5F9F3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1195D29161A051400C5F9F3 /* CoreLocation.framework */; };
 		B1195D2E161A0EA200C5F9F3 /* WorkoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1195D2D161A0EA200C5F9F3 /* WorkoutModel.m */; };
-		B11F08621620180400E2DD89 /* WorkoutEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F085B1620180400E2DD89 /* WorkoutEndViewController.m */; };
 		B11F08631620180400E2DD89 /* WorkoutReadyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F085D1620180400E2DD89 /* WorkoutReadyViewController.m */; };
 		B11F08641620180400E2DD89 /* WorkoutSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F085F1620180400E2DD89 /* WorkoutSelectionView.m */; };
 		B11F08651620180400E2DD89 /* WorkoutTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F08611620180400E2DD89 /* WorkoutTrackingViewController.m */; };
 		B11F086D1620181A00E2DD89 /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F08691620181A00E2DD89 /* HistoryDetailViewController.m */; };
 		B11F086E1620181A00E2DD89 /* HistoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F086B1620181A00E2DD89 /* HistoryListViewController.m */; };
 		B11F08711620184400E2DD89 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F08701620184300E2DD89 /* Common.m */; };
-		B11F087B1620185E00E2DD89 /* ProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F08751620185E00E2DD89 /* ProfileEditViewController.m */; };
-		B11F087D1620185E00E2DD89 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11F08791620185E00E2DD89 /* ProfileViewController.m */; };
 		B13CE188161139AB00D0EF59 /* TypeHiking.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CE187161139AB00D0EF59 /* TypeHiking.png */; };
 		B13CE18A16113AC400D0EF59 /* TypeCycling.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CE18916113AC400D0EF59 /* TypeCycling.png */; };
 		B13CE18C16113C2B00D0EF59 /* TypeSkiing.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CE18B16113C2B00D0EF59 /* TypeSkiing.png */; };
 		B13CE18E1611417F00D0EF59 /* TypeSkating.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CE18D1611417F00D0EF59 /* TypeSkating.png */; };
 		B13CE190161141E100D0EF59 /* TypeOther.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CE18F161141E100D0EF59 /* TypeOther.png */; };
+		B16A74541626950B001A272C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B16A74531626950B001A272C /* ProfileViewController.m */; };
 		B18C1DB91613079D00B70ABA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C1DB81613079D00B70ABA /* MapKit.framework */; };
 		B18C1DBB16130AA000B70ABA /* WorkoutSignalImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B18C1DBA16130AA000B70ABA /* WorkoutSignalImage.png */; };
 		B197B7D316112F3100B35C52 /* TabBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B197B7C216112F3100B35C52 /* TabBarBackground.png */; };
@@ -49,6 +51,7 @@
 		B1A268321610FB4400BACBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1A268341610FB4400BACBBF /* Localizable.strings */; };
 		B1A2684116110E2200BACBBF /* WorkoutTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */; };
 		B1DDAA781625D2E800E3B358 /* WorkoutTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */; };
+		B1EB4EB71625D72600981D39 /* WorkoutEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EB4EB61625D72600981D39 /* WorkoutEndViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,11 +67,13 @@
 		B1143364160133FD006B7239 /* Joyfl Tracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Joyfl Tracker-Prefix.pch"; sourceTree = "<group>"; };
 		B1143365160133FD006B7239 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1143366160133FD006B7239 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B114BDD4162A3F750072B6B1 /* TypeCyclingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeCyclingIcon.png; sourceTree = "<group>"; };
+		B114BDD5162A3F750072B6B1 /* TypeOtherIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeOtherIcon.png; sourceTree = "<group>"; };
+		B114BDD6162A3F750072B6B1 /* TypeRunningIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeRunningIcon.png; sourceTree = "<group>"; };
+		B114BDD7162A3F750072B6B1 /* TypeWalkingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeWalkingIcon.png; sourceTree = "<group>"; };
 		B1195D29161A051400C5F9F3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B1195D2C161A0EA200C5F9F3 /* WorkoutModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutModel.h; path = Models/WorkoutModel.h; sourceTree = "<group>"; };
 		B1195D2D161A0EA200C5F9F3 /* WorkoutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutModel.m; path = Models/WorkoutModel.m; sourceTree = "<group>"; };
-		B11F085A1620180400E2DD89 /* WorkoutEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutEndViewController.h; path = "Views and Controllers/Workout/WorkoutEndViewController.h"; sourceTree = "<group>"; };
-		B11F085B1620180400E2DD89 /* WorkoutEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutEndViewController.m; path = "Views and Controllers/Workout/WorkoutEndViewController.m"; sourceTree = "<group>"; };
 		B11F085C1620180400E2DD89 /* WorkoutReadyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutReadyViewController.h; path = "Views and Controllers/Workout/WorkoutReadyViewController.h"; sourceTree = "<group>"; };
 		B11F085D1620180400E2DD89 /* WorkoutReadyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutReadyViewController.m; path = "Views and Controllers/Workout/WorkoutReadyViewController.m"; sourceTree = "<group>"; };
 		B11F085E1620180400E2DD89 /* WorkoutSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutSelectionView.h; path = "Views and Controllers/Workout/WorkoutSelectionView.h"; sourceTree = "<group>"; };
@@ -81,15 +86,13 @@
 		B11F086B1620181A00E2DD89 /* HistoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryListViewController.m; path = "Views and Controllers/History/HistoryListViewController.m"; sourceTree = "<group>"; };
 		B11F086F1620184300E2DD89 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		B11F08701620184300E2DD89 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
-		B11F08741620185E00E2DD89 /* ProfileEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileEditViewController.h; path = "Views and Controllers/Profile/ProfileEditViewController.h"; sourceTree = "<group>"; };
-		B11F08751620185E00E2DD89 /* ProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileEditViewController.m; path = "Views and Controllers/Profile/ProfileEditViewController.m"; sourceTree = "<group>"; };
-		B11F08781620185E00E2DD89 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "Views and Controllers/Profile/ProfileViewController.h"; sourceTree = "<group>"; };
-		B11F08791620185E00E2DD89 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "Views and Controllers/Profile/ProfileViewController.m"; sourceTree = "<group>"; };
 		B13CE187161139AB00D0EF59 /* TypeHiking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeHiking.png; sourceTree = "<group>"; };
 		B13CE18916113AC400D0EF59 /* TypeCycling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeCycling.png; sourceTree = "<group>"; };
 		B13CE18B16113C2B00D0EF59 /* TypeSkiing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeSkiing.png; sourceTree = "<group>"; };
 		B13CE18D1611417F00D0EF59 /* TypeSkating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeSkating.png; sourceTree = "<group>"; };
 		B13CE18F161141E100D0EF59 /* TypeOther.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TypeOther.png; sourceTree = "<group>"; };
+		B16A74521626950B001A272C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = "Views and Controllers/Profile/ProfileViewController.h"; sourceTree = "<group>"; };
+		B16A74531626950B001A272C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = "Views and Controllers/Profile/ProfileViewController.m"; sourceTree = "<group>"; };
 		B18C1DB81613079D00B70ABA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B18C1DBA16130AA000B70ABA /* WorkoutSignalImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WorkoutSignalImage.png; sourceTree = "<group>"; };
 		B197B7C216112F3100B35C52 /* TabBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBarBackground.png; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 		B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTypeModel.m; path = Models/WorkoutTypeModel.m; sourceTree = "<group>"; };
 		B1DDAA761625D2E800E3B358 /* WorkoutTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutTypeManager.h; path = Models/WorkoutTypeManager.h; sourceTree = "<group>"; };
 		B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTypeManager.m; path = Models/WorkoutTypeManager.m; sourceTree = "<group>"; };
+		B1EB4EB51625D72600981D39 /* WorkoutEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutEndViewController.h; path = "Views and Controllers/Workout/WorkoutEndViewController.h"; sourceTree = "<group>"; };
+		B1EB4EB61625D72600981D39 /* WorkoutEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutEndViewController.m; path = "Views and Controllers/Workout/WorkoutEndViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,7 @@
 				B11F08701620184300E2DD89 /* Common.m */,
 				B1DDAA751625D2C000E3B358 /* Views & Controllers */,
 				B1ED019B160C4B96007961AF /* Models */,
+				B1CF5D801626F839003BFC2E /* Libraries */,
 				B182DADC1601C1080017BB8B /* Resource */,
 				B114335D160133FD006B7239 /* Supporting Files */,
 			);
@@ -202,8 +208,8 @@
 				B11F085F1620180400E2DD89 /* WorkoutSelectionView.m */,
 				B11F08601620180400E2DD89 /* WorkoutTrackingViewController.h */,
 				B11F08611620180400E2DD89 /* WorkoutTrackingViewController.m */,
-				B11F085A1620180400E2DD89 /* WorkoutEndViewController.h */,
-				B11F085B1620180400E2DD89 /* WorkoutEndViewController.m */,
+				B1EB4EB51625D72600981D39 /* WorkoutEndViewController.h */,
+				B1EB4EB61625D72600981D39 /* WorkoutEndViewController.m */,
 			);
 			name = Workout;
 			sourceTree = "<group>";
@@ -222,10 +228,8 @@
 		B146E2A5160A6026009357C3 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B11F08781620185E00E2DD89 /* ProfileViewController.h */,
-				B11F08791620185E00E2DD89 /* ProfileViewController.m */,
-				B11F08741620185E00E2DD89 /* ProfileEditViewController.h */,
-				B11F08751620185E00E2DD89 /* ProfileEditViewController.m */,
+				B16A74521626950B001A272C /* ProfileViewController.h */,
+				B16A74531626950B001A272C /* ProfileViewController.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -285,6 +289,10 @@
 		B197B7C816112F3100B35C52 /* Types */ = {
 			isa = PBXGroup;
 			children = (
+				B114BDD4162A3F750072B6B1 /* TypeCyclingIcon.png */,
+				B114BDD5162A3F750072B6B1 /* TypeOtherIcon.png */,
+				B114BDD6162A3F750072B6B1 /* TypeRunningIcon.png */,
+				B114BDD7162A3F750072B6B1 /* TypeWalkingIcon.png */,
 				B13CE18F161141E100D0EF59 /* TypeOther.png */,
 				B13CE18D1611417F00D0EF59 /* TypeSkating.png */,
 				B13CE18B16113C2B00D0EF59 /* TypeSkiing.png */,
@@ -309,6 +317,13 @@
 			);
 			name = Workout;
 			path = Resource/Workout;
+			sourceTree = "<group>";
+		};
+		B1CF5D801626F839003BFC2E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 		B1DDAA751625D2C000E3B358 /* Views & Controllers */ = {
@@ -411,6 +426,10 @@
 				B13CE18E1611417F00D0EF59 /* TypeSkating.png in Resources */,
 				B13CE190161141E100D0EF59 /* TypeOther.png in Resources */,
 				B18C1DBB16130AA000B70ABA /* WorkoutSignalImage.png in Resources */,
+				B114BDD8162A3F750072B6B1 /* TypeCyclingIcon.png in Resources */,
+				B114BDD9162A3F750072B6B1 /* TypeOtherIcon.png in Resources */,
+				B114BDDA162A3F750072B6B1 /* TypeRunningIcon.png in Resources */,
+				B114BDDB162A3F750072B6B1 /* TypeWalkingIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,16 +444,15 @@
 				B1143367160133FD006B7239 /* AppDelegate.m in Sources */,
 				B1A2684116110E2200BACBBF /* WorkoutTypeModel.m in Sources */,
 				B1195D2E161A0EA200C5F9F3 /* WorkoutModel.m in Sources */,
-				B11F08621620180400E2DD89 /* WorkoutEndViewController.m in Sources */,
 				B11F08631620180400E2DD89 /* WorkoutReadyViewController.m in Sources */,
 				B11F08641620180400E2DD89 /* WorkoutSelectionView.m in Sources */,
 				B11F08651620180400E2DD89 /* WorkoutTrackingViewController.m in Sources */,
 				B11F086D1620181A00E2DD89 /* HistoryDetailViewController.m in Sources */,
 				B11F086E1620181A00E2DD89 /* HistoryListViewController.m in Sources */,
 				B11F08711620184400E2DD89 /* Common.m in Sources */,
-				B11F087B1620185E00E2DD89 /* ProfileEditViewController.m in Sources */,
-				B11F087D1620185E00E2DD89 /* ProfileViewController.m in Sources */,
 				B1DDAA781625D2E800E3B358 /* WorkoutTypeManager.m in Sources */,
+				B1EB4EB71625D72600981D39 /* WorkoutEndViewController.m in Sources */,
+				B16A74541626950B001A272C /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

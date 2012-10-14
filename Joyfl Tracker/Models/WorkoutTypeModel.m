@@ -10,6 +10,6 @@
 
 @implementation WorkoutTypeModel
 
-@synthesize typeId, typeName, image;
+@synthesize typeId, typeName, image, icon;
 
 @end

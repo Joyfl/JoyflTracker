@@ -18,7 +18,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
 		
 		// Basic
 		self.title = L(@"WORKOUT");
@@ -102,6 +101,9 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+#pragma mark - Member Functions
+
 - (void)addWorkoutTypes
 {
 	int elementNum = [manager.types count];
@@ -118,8 +120,7 @@
 }
 
 
-#pragma mark -
-#pragma mark UIScrollViewDelegate
+#pragma mark - ScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -131,8 +132,7 @@
 }
 
 
-#pragma mark -
-#pragma mark ControlEventSelectors
+#pragma mark - Control Event Selectors
 
 - (void)startButtonDidTouchUpInside
 {
@@ -145,5 +145,6 @@
 	[self.navigationController pushViewController:workoutTrackingViewController animated:YES];
 	[workoutTrackingViewController release];
 }
+
 
 @end

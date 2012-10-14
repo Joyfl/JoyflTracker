@@ -20,7 +20,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
 		
 		// Basic
 		self.title = L(@"TRACKING");
@@ -47,26 +46,26 @@
 		[calorieLabel release];
 		
 		// Make GoogleMap
-		mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 40, 320, 280)];
+		mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 40, 320, 348)];
 		mapView.delegate = self;
 		[self.view addSubview:mapView];
 		[mapView release];
 		
 		// Make current button
 		UIButton *currentButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		currentButton.frame = CGRectMake(40, 340, 30, 30);
+		currentButton.frame = CGRectMake(19, 402, 42, 42);
 		[currentButton setBackgroundColor:[UIColor redColor]];
 		[self.view addSubview:currentButton];
 		
 		// Make signal image
 		signalImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:IMAGE_WORKOUT_SIGNAL_IMAGE]];
-		signalImage.frame = CGRectMake(260, 340, 30, 30);
+		signalImage.frame = CGRectMake(259, 402, 42, 42);
 		[self.view addSubview:signalImage];
 		[signalImage release];
 		
 		// Make pause button
 		pauseButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		pauseButton.frame = CGRectMake(80, 382, 162, 42);
+		pauseButton.frame = CGRectMake(80, 402, 160, 42);
 		[pauseButton setTitle:L(@"BUTTON_WORKOUT_PAUSE") forState:UIControlStateNormal];
 		[pauseButton setTitleColor:[UIColor colorWithRed:90.0f/255.0f green:90.0f/255.0f blue:90.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
 		[pauseButton setTitleColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0] forState:UIControlStateHighlighted];
@@ -77,8 +76,10 @@
 		
 		// Make resume button
 		resumeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		resumeButton.frame = CGRectMake(80, 382, 80, 42);
+		resumeButton.frame = CGRectMake(80, 402, 75, 42);
 		[resumeButton setTitle:L(@"BUTTON_WORKOUT_RESUME") forState:UIControlStateNormal];
+		[resumeButton setTitleColor:[UIColor colorWithRed:90.0f/255.0f green:90.0f/255.0f blue:90.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
+		[resumeButton setTitleColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0] forState:UIControlStateHighlighted];
 		[resumeButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON] forState:UIControlStateNormal];
 		[resumeButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON_HIGHLIGHTED] forState:UIControlStateHighlighted];
 		[resumeButton addTarget:self action:@selector(resumeButtonDidTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
@@ -87,8 +88,10 @@
 		
 		// Make end button
 		endButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		endButton.frame = CGRectMake(162, 382, 80, 42);
+		endButton.frame = CGRectMake(165, 402, 75, 42);
 		[endButton setTitle:L(@"BUTTON_WORKOUT_END") forState:UIControlStateNormal];
+		[endButton setTitleColor:[UIColor colorWithRed:90.0f/255.0f green:90.0f/255.0f blue:90.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
+		[endButton setTitleColor:[UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0] forState:UIControlStateHighlighted];
 		[endButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON] forState:UIControlStateNormal];
 		[endButton setBackgroundImage:[UIImage imageNamed:IMAGE_WORKOUT_START_BUTTON_HIGHLIGHTED] forState:UIControlStateHighlighted];
 		[endButton addTarget:self action:@selector(endButtonDidTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
@@ -115,14 +118,16 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+#pragma mark - Member Functions
+
 - (void)setWorkoutType:(NSInteger)typeId
 {
 	workout = [[WorkoutModel alloc] init];
 	workout.typeId = typeId;
 }
 
-#pragma mark -
-#pragma mark ControlEventSelectors
+#pragma mark - Control Event Selectors
 
 - (void)pauseButtonDidTouchUpInside
 {
@@ -140,7 +145,8 @@
 
 - (void)endButtonDidTouchUpInside
 {
-	WorkoutEndViewController *workoutEndViewController = [[WorkoutEndViewController alloc] init];
+	WorkoutEndViewController *workoutEndViewController = [[WorkoutEndViewController alloc] initWithStyle:UITableViewStyleGrouped];
+	workoutEndViewController.workout = workout;
 	UINavigationController *workoutEndNavigationController = [[UINavigationController alloc] initWithRootViewController:workoutEndViewController];
 	[workoutEndViewController release];
 	[self presentViewController:workoutEndNavigationController animated:YES completion:nil];
