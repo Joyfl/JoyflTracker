@@ -30,7 +30,7 @@ enum
 	manager = [WorkoutTypeManager manager];
 	
 	// Make done button
-	UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:L(@"BUTTON_TRACKING_DONE") style:UIBarButtonItemStyleDone target:self action:@selector(doneButtonPressed)];
+	UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:L(@"BUTTON_DONE") style:UIBarButtonItemStyleDone target:self action:@selector(doneButtonPressed)];
 	self.navigationItem.rightBarButtonItem = doneButton;
 	[doneButton release];
 	
@@ -68,6 +68,7 @@ enum
 		typeIcon = [[UIImageView alloc] initWithFrame:CGRectMake(7, 7, 30, 30)];
 		typeIcon.image = [[manager.types objectAtIndex:workout.typeId] icon];
 		typeLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 7, 200, 32)];
+		typeLabel.backgroundColor = [UIColor clearColor];
 		typeLabel.text = [[manager.types objectAtIndex:workout.typeId] typeName];
 		typeLabel.font = [UIFont systemFontOfSize:20];
 		[cell.contentView addSubview:typeIcon];
@@ -79,6 +80,7 @@ enum
 	else if(row == rowMemo)
 	{
 		memo = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 300, 75)];
+		memo.backgroundColor = [UIColor clearColor];
 		memo.text = L(@"MESSAGE_WORKOUT_MEMO");
 		memo.textColor = [UIColor lightGrayColor];
 		memo.font = [UIFont systemFontOfSize:17];
@@ -103,7 +105,6 @@ enum
 	{
 		actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil, nil];
 		[actionSheet setActionSheetStyle:UIActionSheetStyleDefault];
-		actionSheet.frame = CGRectMake( 0, 480, 320, 214 );
 		actionSheet.delegate = self;
 		
 		pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 40, 0, 0)];
@@ -114,10 +115,11 @@ enum
 		[actionSheet addSubview:pickerView];
 		[pickerView release];
 		
-		UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:L(@"BUTTON_TRACKING_DONE")]];
+		UISegmentedControl *closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObject:L(@"BUTTON_DONE")]];
 		closeButton.momentary = YES;
 		closeButton.frame = CGRectMake(260, 7, 50, 30);
 		closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
+		closeButton.tintColor = [UIColor brownColor];
 		[closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
 		[actionSheet addSubview:closeButton];
 		[closeButton release];
@@ -199,6 +201,14 @@ enum
 	if(textView.text.length > 0 && textView.textColor == [UIColor blackColor]) return YES;
 	textView.text = @"";
 	textView.textColor = [UIColor blackColor];
+	return YES;
+}
+
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView
+{
+	if(textView.text.length > 0 && textView.textColor == [UIColor blackColor]) return YES;
+	textView.text = L(@"MESSAGE_WORKOUT_MEMO");
+	textView.textColor = [UIColor lightGrayColor];
 	return YES;
 }
 

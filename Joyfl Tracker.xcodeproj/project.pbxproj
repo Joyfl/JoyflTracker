@@ -50,6 +50,7 @@
 		B197B7E1161133A800B35C52 /* WorkoutBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B197B7E0161133A800B35C52 /* WorkoutBackground.jpg */; };
 		B1A268321610FB4400BACBBF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1A268341610FB4400BACBBF /* Localizable.strings */; };
 		B1A2684116110E2200BACBBF /* WorkoutTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */; };
+		B1DC1BDD162BF3B800636647 /* ProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC1BDC162BF3B800636647 /* ProfileManager.m */; };
 		B1DDAA781625D2E800E3B358 /* WorkoutTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */; };
 		B1EB4EB71625D72600981D39 /* WorkoutEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EB4EB61625D72600981D39 /* WorkoutEndViewController.m */; };
 /* End PBXBuildFile section */
@@ -111,6 +112,8 @@
 		B1A268331610FB4400BACBBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1A2683F16110E2200BACBBF /* WorkoutTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutTypeModel.h; path = Models/WorkoutTypeModel.h; sourceTree = "<group>"; };
 		B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTypeModel.m; path = Models/WorkoutTypeModel.m; sourceTree = "<group>"; };
+		B1DC1BDB162BF3B800636647 /* ProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileManager.h; path = Models/ProfileManager.h; sourceTree = "<group>"; };
+		B1DC1BDC162BF3B800636647 /* ProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileManager.m; path = Models/ProfileManager.m; sourceTree = "<group>"; };
 		B1DDAA761625D2E800E3B358 /* WorkoutTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutTypeManager.h; path = Models/WorkoutTypeManager.h; sourceTree = "<group>"; };
 		B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTypeManager.m; path = Models/WorkoutTypeManager.m; sourceTree = "<group>"; };
 		B1EB4EB51625D72600981D39 /* WorkoutEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutEndViewController.h; path = "Views and Controllers/Workout/WorkoutEndViewController.h"; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 				B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */,
 				B1195D2C161A0EA200C5F9F3 /* WorkoutModel.h */,
 				B1195D2D161A0EA200C5F9F3 /* WorkoutModel.m */,
+				B1DC1BDB162BF3B800636647 /* ProfileManager.h */,
+				B1DC1BDC162BF3B800636647 /* ProfileManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				B1DDAA781625D2E800E3B358 /* WorkoutTypeManager.m in Sources */,
 				B1EB4EB71625D72600981D39 /* WorkoutEndViewController.m in Sources */,
 				B16A74541626950B001A272C /* ProfileViewController.m in Sources */,
+				B1DC1BDD162BF3B800636647 /* ProfileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

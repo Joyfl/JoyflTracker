@@ -26,7 +26,7 @@ BUTTON_WORKOUT_START = "Start Workout";
 BUTTON_WORKOUT_PAUSE = "Pause";
 BUTTON_WORKOUT_RESUME = "Resume";
 BUTTON_WORKOUT_END = "End";
-BUTTON_TRACKING_DONE = "done";
+BUTTON_DONE = "done";
 
 // Message
 MESSAGE_START_WORKOUT = "Which work will you do?";
@@ -37,3 +37,5 @@ PROFILE_AGE = "Age";
 PROFILE_SEX = "Sex";
 PROFILE_HEIGHT = "Height";
 PROFILE_WEIGHT = "Weight";
+MALE = "Male";
+FEMALE = "Female";
