@@ -11,19 +11,23 @@
 @interface ProfileManager : NSObject
 {
 	NSInteger age;
-	NSString *sex;
-	CGFloat height;
-	CGFloat weight;
-	
-	
+	NSInteger sexIndex;
+	NSInteger heightInt;
+	NSInteger heightDec;
+	NSInteger weightInt;
+	NSInteger weightDec;
 }
 
 @property (nonatomic, assign) NSInteger age;
-@property (nonatomic, retain) NSString *sex;
-@property (nonatomic, assign) CGFloat height;
-@property (nonatomic, assign) CGFloat weight;
+@property (nonatomic, assign) NSInteger sexIndex;
+@property (nonatomic, assign) NSInteger heightInt;
+@property (nonatomic, assign) NSInteger heightDec;
+@property (nonatomic, assign) NSInteger weightInt;
+@property (nonatomic, assign) NSInteger weightDec;
 
 + (ProfileManager *)manager;
 - (id)init;
+- (void)save;
+- (NSString *)sex;
 
 @end

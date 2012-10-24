@@ -31,6 +31,7 @@ BUTTON_DONE = "done";
 // Message
 MESSAGE_START_WORKOUT = "Which work will you do?";
 MESSAGE_WORKOUT_MEMO = "Write about your workout here";
+MESSAGE_PROFILE_EDIT = "Click item to edit";
 
 // Profile
 PROFILE_AGE = "Age";

@@ -10,7 +10,7 @@
 
 @implementation ProfileManager
 
-@synthesize age, sex, height, weight;
+@synthesize age, sexIndex, heightInt, heightDec, weightInt, weightDec;
 
 + (ProfileManager *)manager
 {
@@ -23,10 +23,23 @@
 - (id)init
 {
 	age = 25;
-	sex = L(@"MALE");
-	height = 170.0f;
-	weight = 65.0f;
+	sexIndex = 0;
+	heightInt = 170;
+	heightDec = 0;
+	weightInt = 65;
+	weightDec = 0;
 	return self;
+}
+
+- (void)save
+{
+	
+}
+
+- (NSString *)sex
+{
+	if(sexIndex == 0) return L(@"MALE");
+	else return L(@"FEMALE");
 }
 
 @end
