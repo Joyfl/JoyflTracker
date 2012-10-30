@@ -22,8 +22,8 @@
 		
 		// Basic
 		self.title = L(@"HISTORY");
-		manager = [WorkoutTypeManager manager];
-		workouts = [[NSMutableArray alloc] init];
+		typeManager = [WorkoutTypeManager manager];
+		workoutManager = [WorkoutManager manager];
 		
 		// Set TabBarItem
 		self.tabBarItem.title = L(@"HISTORY");

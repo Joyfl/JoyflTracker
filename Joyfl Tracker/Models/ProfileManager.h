@@ -27,6 +27,7 @@
 
 + (ProfileManager *)manager;
 - (id)init;
+- (void)load;
 - (void)save;
 - (NSString *)sex;
 

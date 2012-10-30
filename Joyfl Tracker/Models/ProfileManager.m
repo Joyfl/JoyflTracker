@@ -22,6 +22,7 @@
 
 - (id)init
 {
+	self = [super init];
 	age = 25;
 	sexIndex = 0;
 	heightInt = 170;
@@ -29,6 +30,11 @@
 	weightInt = 65;
 	weightDec = 0;
 	return self;
+}
+
+- (void)load
+{
+	
 }
 
 - (void)save

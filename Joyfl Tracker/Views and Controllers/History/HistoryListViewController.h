@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "WorkoutTypeManager.h"
-#import "WorkoutModel.h"
+#import "WorkoutManager.h"
 
 @interface HistoryListViewController : UITableViewController
 {
 	NSMutableArray *workouts;
-	WorkoutTypeManager *manager;
+	WorkoutTypeManager *typeManager;
+	WorkoutManager *workoutManager;
 }
 
 @end

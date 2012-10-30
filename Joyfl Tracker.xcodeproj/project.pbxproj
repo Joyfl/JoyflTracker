@@ -53,6 +53,7 @@
 		B1DC1BDD162BF3B800636647 /* ProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC1BDC162BF3B800636647 /* ProfileManager.m */; };
 		B1DDAA781625D2E800E3B358 /* WorkoutTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */; };
 		B1EB4EB71625D72600981D39 /* WorkoutEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EB4EB61625D72600981D39 /* WorkoutEndViewController.m */; };
+		B1F1A9801638461A0043292D /* WorkoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F1A97F1638461A0043292D /* WorkoutManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,8 @@
 		B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutTypeManager.m; path = Models/WorkoutTypeManager.m; sourceTree = "<group>"; };
 		B1EB4EB51625D72600981D39 /* WorkoutEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutEndViewController.h; path = "Views and Controllers/Workout/WorkoutEndViewController.h"; sourceTree = "<group>"; };
 		B1EB4EB61625D72600981D39 /* WorkoutEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutEndViewController.m; path = "Views and Controllers/Workout/WorkoutEndViewController.m"; sourceTree = "<group>"; };
+		B1F1A97E1638461A0043292D /* WorkoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkoutManager.h; path = Models/WorkoutManager.h; sourceTree = "<group>"; };
+		B1F1A97F1638461A0043292D /* WorkoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkoutManager.m; path = Models/WorkoutManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,12 +345,14 @@
 		B1ED019B160C4B96007961AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B1DDAA761625D2E800E3B358 /* WorkoutTypeManager.h */,
-				B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */,
 				B1A2683F16110E2200BACBBF /* WorkoutTypeModel.h */,
 				B1A2684016110E2200BACBBF /* WorkoutTypeModel.m */,
+				B1DDAA761625D2E800E3B358 /* WorkoutTypeManager.h */,
+				B1DDAA771625D2E800E3B358 /* WorkoutTypeManager.m */,
 				B1195D2C161A0EA200C5F9F3 /* WorkoutModel.h */,
 				B1195D2D161A0EA200C5F9F3 /* WorkoutModel.m */,
+				B1F1A97E1638461A0043292D /* WorkoutManager.h */,
+				B1F1A97F1638461A0043292D /* WorkoutManager.m */,
 				B1DC1BDB162BF3B800636647 /* ProfileManager.h */,
 				B1DC1BDC162BF3B800636647 /* ProfileManager.m */,
 			);
@@ -459,6 +464,7 @@
 				B1EB4EB71625D72600981D39 /* WorkoutEndViewController.m in Sources */,
 				B16A74541626950B001A272C /* ProfileViewController.m in Sources */,
 				B1DC1BDD162BF3B800636647 /* ProfileManager.m in Sources */,
+				B1F1A9801638461A0043292D /* WorkoutManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
